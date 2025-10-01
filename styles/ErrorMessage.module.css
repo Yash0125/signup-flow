@@ -1,0 +1,51 @@
+.errorContainer {
+  margin: 1rem 0;
+}
+
+.errorMessage {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  color: #991b1b;
+}
+
+.errorIcon {
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.errorText {
+  flex-grow: 1;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: #991b1b;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.closeButton:hover {
+  background-color: #fee2e2;
+}
+
+.closeButton:focus {
+  outline: 2px solid #991b1b;
+  outline-offset: 2px;
+}

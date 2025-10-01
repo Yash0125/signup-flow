@@ -1,0 +1,147 @@
+.inputGroup {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.required {
+  color: #ef4444;
+  margin-left: 0.25rem;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  background-color: #ffffff;
+  font-family: inherit;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 5rem;
+  line-height: 1.5;
+}
+
+.passwordInput {
+  padding-right: 3rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.input:hover {
+  border-color: #9ca3af;
+}
+
+.inputError {
+  border-color: #ef4444;
+}
+
+.inputError:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  color: #6b7280;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.passwordToggle:hover {
+  color: #374151;
+  background-color: #f3f4f6;
+}
+
+.passwordToggle:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  color: #3b82f6;
+}
+
+.passwordToggle:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.eyeIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke-width: 2;
+  transition: all 0.2s ease-in-out;
+}
+
+.passwordToggle:hover .eyeIcon {
+  stroke-width: 2.5;
+}
+
+.errorText {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #ef4444;
+  display: flex;
+  align-items: center;
+}
+
+.errorText::before {
+  content: "⚠️";
+  margin-right: 0.5rem;
+}
+
+/* Animation for password toggle */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+.passwordToggle {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .passwordToggle {
+    right: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .passwordInput {
+    padding-right: 2.5rem;
+  }
+}
